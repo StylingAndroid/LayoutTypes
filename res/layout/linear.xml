@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_weight="1">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<TextView android:text="Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_weight="1"
+		android:orientation="horizontal">
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="vertical" android:layout_width="match_parent">
+			<TextView android:text="One" android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+			<TextView android:text="Two" android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+			<TextView android:text="Three" android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+			<TextView android:text="Four" android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_weight="1" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="One,One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="One,Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<TextView android:text="One,Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="One,Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="Two,One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Two,Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<TextView android:text="Two,Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Two,Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="Three,One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Three,Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<TextView android:text="Three,Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Three,Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<TextView android:text="Four,One" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Four,Two" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<TextView android:text="Four,Three" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+			<TextView android:text="Four,Four" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
