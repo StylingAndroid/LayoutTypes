@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<FrameLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_weight="1">
+		<TextView android:text="TopLeft" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="TopRight"
+			android:layout_gravity="top|right" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="TopCentre"
+			android:layout_gravity="top|center_horizontal" />
+		<TextView android:text="Left" android:layout_gravity="left|center_vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Right"
+			android:layout_gravity="right|center_vertical" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Centre"
+			android:layout_gravity="center" />
+		<TextView android:text="BottomLeft" android:layout_gravity="left|bottom"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="BottomLeft"
+			android:layout_gravity="right|bottom" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="BottomLeft"
+			android:layout_gravity="center|bottom" />
+	</FrameLayout>
+	<LinearLayout android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_weight="1">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:padding="5dp">
+			<ImageView android:layout_marginRight="5dp"
+				android:layout_height="match_parent" android:src="@drawable/line"
+				android:layout_width="5dp"></ImageView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="This is some short text" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:padding="5dp">
+			<ImageView android:layout_marginRight="5dp"
+				android:layout_height="match_parent" android:src="@drawable/line"
+				android:layout_width="5dp"></ImageView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="This is some much longer text which should spread on to multiple lines so that we can see how the line to the left matches the height of this TextView" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
