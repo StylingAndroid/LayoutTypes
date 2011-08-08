@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_weight="1">
+		<TextView android:text="TopLeft" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="TopRight"
+			android:layout_alignParentRight="true" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="TopCentre"
+			android:layout_centerHorizontal="true" />
+		<TextView android:text="Left" android:layout_centerVertical="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_centerVertical="true"
+			android:text="Right" android:layout_alignParentRight="true" />
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Centre"
+			android:layout_centerInParent="true" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_weight="1" android:layout_width="match_parent">
+		<TextView android:id="@+id/TopLeft" android:text="TopLeft"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/RightOfTopLeft" android:text="RightOf"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/TopLeft" />
+		<TextView android:id="@+id/Below" android:text="Below"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/TopLeft" android:layout_alignLeft="@id/RightOfTopLeft" />
+		<TextView android:id="@+id/TopRight" android:text="TopRight"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" />
+		<TextView android:id="@+id/LeftOfTopRight" android:text="LeftOf"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/TopRight" />
+		<TextView android:text="Below+Pad" android:layout_margin="5dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/TopRight" android:layout_alignRight="@id/LeftOfTopRight" />
+	</RelativeLayout>
+
+</LinearLayout>
